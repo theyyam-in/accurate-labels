@@ -10,49 +10,13 @@
     <meta name="keywords"
         content="Labels company near me, Pricing labels, Plain labels, Labels company in uae, Labels company in ajman, Lubricant labels, Self adhesive labels manufacturing company, Roll type labels, Contact Accurate Labels, Label Manufacturer Ajman, UAE Label Printing">
     <link rel="canonical" href="https://www.accuratelabelsuae.com/contact.html">
-    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="style.css?v=1779113043483">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,900;1,900&display=swap"
         rel="stylesheet">
-    <style>
-        header {
-            background-color: #ffffff !important;
-            padding: 0 !important;
-        }
-
-        header nav ul li a {
-            color: #333333 !important;
-            font-weight: 600;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        header nav ul li a:hover,
-        header nav ul li a.active {
-            color: #D4AF37 !important;
-        }
-
-        .logo-img {
-            height: 80px !important;
-            width: auto !important;
-            max-width: 350px !important;
-            transition: transform 0.3s ease;
-        }
-
-        .logo-img:hover {
-            transform: scale(1.02);
-        }
-
-        .contact-hero h1 {
-            font-family: 'Playfair Display', serif !important;
-            font-weight: 900 !important;
-            letter-spacing: -1px !important;
-            font-size: clamp(3.5rem, 8vw, 4.5rem) !important;
-        }
-    </style>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -62,7 +26,13 @@
             <div class="logo">
                 <img src="images/logoa.svg" alt="Accurate Labels Manufacturing L.L.C" class="logo-img">
             </div>
+            <input type="checkbox" id="mobile-menu-toggle-checkbox" class="menu-toggle-checkbox">
+            <label for="mobile-menu-toggle-checkbox" class="menu-toggle-btn"><i class="fas fa-bars"></i></label>
+            <label for="mobile-menu-toggle-checkbox" class="mobile-overlay"></label>
+
             <nav>
+                <label for="mobile-menu-toggle-checkbox" class="menu-close-btn"><i class="fas fa-times"></i></label>
+
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about-us.html">About us</a></li>
@@ -70,6 +40,8 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html" class="active">Contact us</a></li>
                 </ul>
+            
+                <div class="mobile-contact-info"><p><i class="fas fa-phone-alt"></i> +971 562353012</p><p><i class="fas fa-envelope"></i> info@accuratelabelsuae.com</p></div>
             </nav>
         </div>
     </header>

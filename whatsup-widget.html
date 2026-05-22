@@ -1,4 +1,8 @@
-<!-- WhatsApp Chat Widget for Accurate Labels - Green Icon -->
+<!-- 
+            <input type="checkbox" id="mobile-menu-toggle-checkbox" class="menu-toggle-checkbox">
+            <label for="mobile-menu-toggle-checkbox" class="menu-toggle-btn"><i class="fas fa-bars"></i></label>
+            <label for="mobile-menu-toggle-checkbox" class="mobile-overlay"></label>
+WhatsApp Chat Widget for Accurate Labels - Green Icon -->
 <div id="whatsapp-widget" style="position: fixed; bottom: 20px; right: 20px; cursor: pointer; z-index: 99999999;">
     <div style="display: flex; justify-content: center; align-items: center; position: relative;">
         <!-- Call to Action Text (appears on hover) -->
@@ -43,7 +47,6 @@
         });
     }
     function trackWhatsAppClick() {
-        console.log('WhatsApp button clicked'
         if (typeof gtag !== 'undefined') {
             gtag('event', 'click', {
                 'event_category': 'WhatsApp',

@@ -11,7 +11,7 @@
         content="Labels company near me, Pricing labels, Plain labels, Labels company in uae, Labels company in ajman, Lubricant labels, Self adhesive labels manufacturing company, Roll type labels, Label Manufacturing Blog, Labeling Tips, Packaging News UAE, Custom Label Advice">
     <!-- Canonical URL - Prevents duplicate content -->
     <link rel="canonical" href="https://www.accuratelabelsuae.com/blog.html">
-    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="style.css?v=1779113043483">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,52 +19,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,900;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        header {
-            background-color: #ffffff !important;
-            padding: 0 !important;
-        }
-
-        header nav ul li a {
-            color: #333333 !important;
-            font-weight: 600;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        header nav ul li a:hover,
-        header nav ul li a.active {
-            color: #D4AF37 !important;
-        }
-
-        .logo-img {
-            height: 80px !important;
-            width: auto !important;
-            max-width: 350px !important;
-            transition: transform 0.3s ease;
-        }
-
-        .logo-img:hover {
-            transform: scale(1.02);
-        }
-
-        .product-hero {
-            padding: 120px 0 !important;
-        }
-
-        .product-hero h1 {
-            font-family: 'Playfair Display', serif !important;
-            font-size: clamp(3.5rem, 8vw, 4.5rem) !important;
-            font-weight: 900 !important;
-            letter-spacing: -1px !important;
-            margin-bottom: 20px !important;
-        }
-
-        .product-hero p {
-            font-size: 1.1rem !important;
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -73,7 +28,13 @@
             <div class="logo">
                 <img src="images/logoa.svg" alt="Accurate Labels Manufacturing L.L.C" class="logo-img">
             </div>
+            <input type="checkbox" id="mobile-menu-toggle-checkbox" class="menu-toggle-checkbox">
+            <label for="mobile-menu-toggle-checkbox" class="menu-toggle-btn"><i class="fas fa-bars"></i></label>
+            <label for="mobile-menu-toggle-checkbox" class="mobile-overlay"></label>
+
             <nav>
+                <label for="mobile-menu-toggle-checkbox" class="menu-close-btn"><i class="fas fa-times"></i></label>
+
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about-us.html">About Us</a></li>
@@ -81,6 +42,8 @@
                     <li><a href="blog.html" class="active">Blog</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
+            
+                <div class="mobile-contact-info"><p><i class="fas fa-phone-alt"></i> +971 562353012</p><p><i class="fas fa-envelope"></i> info@accuratelabelsuae.com</p></div>
             </nav>
         </div>
     </header>
@@ -94,7 +57,7 @@
 
     <section class="blog-grid" style="padding: 80px 0; background-color: #111;">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); gap: 30px;">
 
                 <!-- Blog Post 1 -->
                 <div class="blog-card"
