@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap');
 
 :root {
     --card-bg: rgba(26, 26, 26, 0.8);
@@ -2178,7 +2178,8 @@ body.dark-page {
 }
 
 .dark-page .product-info ul li::before {
-    content: 'âœ”' !important;
+    content: '\f00c' !important;
+    font-family: "Font Awesome 6 Free" !important;
     position: absolute !important;
     left: 5px !important;
     top: -2px !important;
